@@ -8,4 +8,4 @@ Será avaliado a lógica utilizada, simplicidade do código, documentação do c
 
 Como responsável por uma empresa de gerenciamento de projetos eu gostaria de controlar de forma simples todos os projetos da companhia. Os projetos terão um número ilimitado de empregados associados a eles, sendo que um empregado pode ser Gerente ou Funcionário. Cada gerente tem alguns funcionários. Os dados básicos dos projetos são descrição e deadline (Data Inicio e Fim). 
 
-Crie um projeto de Api usando Laravel 5.7 (https://laravel.com/docs/5.7), a resposta dos Controllers deve ser um JSON, cria as Rotas, Models, Requests e Resources necessários para criar empregados e projetos e listar os projetos existentes.
+Crie um projeto de Api usando a última versão disponível do Laravel 5.7 (https://laravel.com/docs), a resposta dos Controllers deve ser um JSON, cria as Rotas, Models, Requests e Resources ou Services necessários para criar empregados e projetos e listar os projetos existentes.
