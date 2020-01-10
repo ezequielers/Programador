@@ -1,0 +1,148 @@
+* {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 60px 1fr 40px;
+  grid-template-columns: 300px 1fr;
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "menu footer";
+}
+
+.app.hide-menu {
+  grid-template-areas:
+    "header header"
+    "content content"
+    "footer footer";
+}
+
+.content {
+  grid-area: content;
+  background-color: #efefef;
+  padding: 20px;
+}
+
+.header {
+  grid-area: header;
+  background: linear-gradient(to right, #357344, #43cc7f);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 100;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.title a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.title a:hover {
+  color: #FFF;
+  text-decoration: none;
+}
+
+header.header > a.toggle {
+  width: 60px;
+  height: 100%;
+  color: #fff;
+  justify-self: flex-start;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header.header > a.toggle:hover {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #DDD;
+  color: #333;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.content {
+  grid-area: content;
+  background-color: #efefef;
+  padding: 20px;
+}
+
+.menu {
+  grid-area: menu;
+  background: linear-gradient(to right, #232526, #414345);
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.menu a,
+.menu a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu .tree-node.selected > .tree-content,
+.menu .tree-node .tree-content:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.tree-arrow.has-child {
+  filter: brightness(2);
+}
+
+.menu .menu-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 20px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #AAA;
+}
+
+.menu .menu-filter i {
+  color: #AAA;
+  margin-right: 10px;
+}
+
+.menu input {
+  color: #CCC;
+  font-size: 1.3rem;
+  border: 0;
+  outline: 0;
+  width: 100%;
+  background: transparent;
+}
+
+.tree-filter-empty {
+  color: #CCC;
+  font-size: 1.3rem;
+  margin-left: 20px;
+}
